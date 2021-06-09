@@ -1,3 +1,4 @@
+#Packages used are time,pandas and numpy
 import time
 import pandas as pd
 import numpy as np
@@ -16,7 +17,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # TO DO: Get the user input for City (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input("\nWhich cities data would you like to explore - Chicago,New York City or Washington?\n").lower()
         if city in ['chicago','new york city','washington']:
@@ -29,7 +30,7 @@ def get_filters():
         print("\nInvalid input: Please provide a valid input.\n")
         filterto = input("\nDo you want to filter by month,day,both or if you want no filter type none?\n").lower()
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # TO DO: Get user input in the first 6 months of a year (all, january, february, ... , june)
     months = ['january','february','march','april','may','june']
     if filterto in ['month','both']:
         month = input("\nPlease enter the month - January, February, March, April, May or June?\n").lower()
