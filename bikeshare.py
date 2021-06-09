@@ -30,7 +30,7 @@ def get_filters():
         print("\nInvalid input: Please provide a valid input.\n")
         filterto = input("\nDo you want to filter by month,day,both or if you want no filter type none?\n").lower()
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # TO DO: Get user input in the first 6 months of a year (all, january, february, ... , june)
     months = ['january','february','march','april','may','june']
     if filterto in ['month','both']:
         month = input("\nPlease enter the month - January, February, March, April, May or June?\n").lower()
